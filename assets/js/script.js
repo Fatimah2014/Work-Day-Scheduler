@@ -7,29 +7,29 @@ console.log(currentDay)
 
 var scheduleTime= moment().format('h');
 console.log(scheduleTime);
-const colors = document. getElementsByClassName("col-9");
+//const colors = document. getElementsByClassName("col-9");
 
 
+$(document).ready(function () {
+    $(".col-1").click(function () {
+       $('.col-9').attr('disabled', true);
 
-
-
-$(".save").on("click", function(e)  {
-    var idvalue = $(this).attr('id')
-    var comment = $(this).siblings(".col-9").val()
-    localStorage.setItem(idvalue, comment)
+    });
+    $(".col-1").dblclick(function () {
+      $('.col-9').removeAttr('disabled');
+      var idvalue = $(this).attr('id')
+      var comment = $(this).siblings(".col-9").val()
+      for (var i = 0, len = buttons.length; i < len; i++) {
+        comment[i].onclick = function (){
+            myFunction (this);
+      localStorage.setItem(idvalue, comment)
+    
+      
+ });
 });
 
+var saveButton = document.getElementsByTagName('button');
 
+    }
+}
 
-const LS = JSON.parse(localStorage.scheduler || '{}'); 
-
-
-
- var currentTime= moment().format('h');
-
- var pastTime= moment().subtract(1, 'hour').calender();
- var futureTime= futureTime>currentTime;
-
-console.log (currentTime)
-console.log(pastTime)
-console.log
