@@ -17,20 +17,19 @@ $(document).ready(function() {
     var theinput = $(this).parent().children('input')
     console.log('this!!! ', theinput)
    $(theinput).attr('disabled', true);
-  });
-})
-  
-  
-   $('.col-1').dblclick(function() {
-    
+
+
+    $('.col-1').dblclick(function() {
+      $('.col-9').removeAttr('disabled');
+      var theinput = $(this).parent().children('input')
       console.log('this!!!', theinput)
-$(theinput).removeAttr('enable', true);
       idvalue = $(this).attr('id')
    
 
     })
 
-//create a loop that set colord and time based off past present future
+ });
+})//create a loop that set colord and time based off past present future
 
 var scheduleTimeM= moment().format('H');
 
