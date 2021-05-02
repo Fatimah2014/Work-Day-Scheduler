@@ -10,20 +10,20 @@ console.log(scheduleTime);
 //when I click on the button the text will be locked.
 //when I double click the text will unlock 
 
-
+var button= document.getElementsByClassName("col-1")
 
 $(document).ready(function() {
-  $(".col-1").click(function () {
+  
+  $(button).click(function () {
     var theinput = $(this).parent().children('input')
     console.log('this!!! ', theinput)
    $(theinput).attr('disabled', true);
-
-
-    $('.col-1').dblclick(function() {
-      $('.col-9').removeAttr('disabled');
+   
+    $(button).dblclick(function() {
       var theinput = $(this).parent().children('input')
-      console.log('this!!!', theinput)
-      idvalue = $(this).attr('id')
+      $(theinput).removeAttr('disabled');
+  
+
    
 
     })
@@ -46,6 +46,7 @@ var scheduleTimeM= moment().format('H');
     if (i + 9 > moment().format('H')) {
       $('.col-9').eq(i).addClass('future')
     }
+
 
   };
   
