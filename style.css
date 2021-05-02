@@ -69,19 +69,11 @@ body {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
   }
-  .col-1{
-    border-radius: 10px;
-    background-color: rgb(98, 165, 98);
-    
-  }
-  .col-2{
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    text-align: right;
-    padding: auto;
-    
-  }
+  
+   
   #basic-addon1{
-    background-color: rgb(98, 165, 98);
+    
+    flex-shrink: 12;
+    background-color:#06aed5;
     border: none;
   }
