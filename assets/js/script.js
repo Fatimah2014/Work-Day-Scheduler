@@ -16,21 +16,29 @@ $(document).ready(function() {
   
   $(button).click(function () {
     var theinput = $(this).parent().children('input')
+<<<<<<< HEAD
     localStorage.setItem(theinput[0].id, theinput[0].value)
     console.log('this!!!', theinput[0].value)
+=======
+    localStorage.setItem('theinput', JSON.stringify(theinput));
+
+    console.log("this!!!!!",theinput)
+
+>>>>>>> ede44605142a9691f0acb3cf25bb437ea6c27bf3
    $(theinput).attr('disabled', true);
    
     $(button).dblclick(function() {
       var theinput = $(this).parent().children('input')
       $(theinput).removeAttr('disabled');
-  
 
-   
+
+
+  //  var data = JSON.parse(localStorage.getItem("todoData"));
 
     })
 
  });
-})//create a loop that set colord and time based off past present future
+})//create a loop that set a color and time based off past present future
 
 var scheduleTimeM= moment().format('H');
 
