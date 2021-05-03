@@ -38,23 +38,26 @@ var scheduleTimeM= moment().format('H');
 
   for (var i = 0; i < 9; i++) {   
     if (i + 9 < moment().format('H')) {
-      $('.col-9').eq(i).addClass('past')
+     $('.col-9').eq(i).addClass('past')
+    var historyText = localStorage.getItem(i+9)
+      $('#'+(i+9)).val(historyText)
+      console.log(historyText)
+    }
+    
+    if (i + 9 == moment().format('H')) {
+     $('.col-9').eq(i).addClass('present')
       var historyText = localStorage.getItem(i+9)
       $('#'+(i+9)).val(historyText)
       console.log(historyText)
     }
-    // console.log(i + 9)
-    // console.log(Boolean(i + 9 == moment().format('H')))
-    if (i + 9 == moment().format('H')) {
-      console.log('check')
-      $('.col-9').eq(i).addClass('present')
     } 
     if (i + 9 > moment().format('H')) {
       $('.col-9').eq(i).addClass('future')
+      var historyText = localStorage.getItem(i+9)
+      $('#'+(i+9)).val(historyText)
+      console.log(historyText)
     }
-
-
-  };
+    ;
   
 
 
