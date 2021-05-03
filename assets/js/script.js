@@ -16,7 +16,8 @@ $(document).ready(function() {
   
   $(button).click(function () {
     var theinput = $(this).parent().children('input')
-    console.log('this!!! ', theinput)
+    localStorage.setItem(theinput[0].id, theinput[0].value)
+    console.log('this!!!', theinput[0].value)
    $(theinput).attr('disabled', true);
    
     $(button).dblclick(function() {
@@ -36,6 +37,9 @@ var scheduleTimeM= moment().format('H');
   for (var i = 0; i < 9; i++) {   
     if (i + 9 < moment().format('H')) {
       $('.col-9').eq(i).addClass('past')
+      var historyText = localStorage.getItem(i+9)
+      $('#'+(i+9)).val(historyText)
+      console.log(historyText)
     }
     // console.log(i + 9)
     // console.log(Boolean(i + 9 == moment().format('H')))
