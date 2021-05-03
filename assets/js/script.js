@@ -16,15 +16,8 @@ $(document).ready(function() {
   
   $(button).click(function () {
     var theinput = $(this).parent().children('input')
-<<<<<<< HEAD
     localStorage.setItem(theinput[0].id, theinput[0].value)
     console.log('this!!!', theinput[0].value)
-=======
-    localStorage.setItem('theinput', JSON.stringify(theinput));
-
-    console.log("this!!!!!",theinput)
-
->>>>>>> ede44605142a9691f0acb3cf25bb437ea6c27bf3
    $(theinput).attr('disabled', true);
    
     $(button).dblclick(function() {
