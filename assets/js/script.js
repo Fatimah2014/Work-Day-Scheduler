@@ -16,20 +16,24 @@ $(document).ready(function() {
   
   $(button).click(function () {
     var theinput = $(this).parent().children('input')
-    console.log('this!!! ', theinput)
+    localStorage.setItem('theinput', JSON.stringify(theinput));
+
+    console.log("this!!!!!",theinput)
+
    $(theinput).attr('disabled', true);
    
     $(button).dblclick(function() {
       var theinput = $(this).parent().children('input')
       $(theinput).removeAttr('disabled');
-  
 
-   
+
+
+  //  var data = JSON.parse(localStorage.getItem("todoData"));
 
     })
 
  });
-})//create a loop that set colord and time based off past present future
+})//create a loop that set a color and time based off past present future
 
 var scheduleTimeM= moment().format('H');
 
