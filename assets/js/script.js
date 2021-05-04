@@ -45,13 +45,17 @@ var scheduleTimeM= moment().format('H');
     
     if (i + 9 == moment().format('H')) {
      $('.col-9').eq(i).addClass('present')
-    
+     var historyText = localStorage.getItem(i+9)
+     $('#'+(i+9)).val(historyText)
+     console.log(historyText)
     
     } 
     if (i + 9 > moment().format('H')) {
       $('.col-9').eq(i).addClass('future')
+      var historyText = localStorage.getItem(i+9)
+      $('#'+(i+9)).val(historyText)
+      console.log(historyText) 
     }
-
   };
   
 
