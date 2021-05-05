@@ -7,6 +7,7 @@ You'll need to use the [Moment.js](https://momentjs.com/) library to work with d
 ## Url
 
 url: https://github.com/Fatimah2014/Work-Day-Scheduler.git
+ https://fatimah2014.github.io/Work-Day-Scheduler/
 
 ##Criteria
 
