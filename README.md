@@ -26,5 +26,6 @@ url: https://github.com/Fatimah2014/Work-Day-Scheduler.git
 -WHEN I refresh the page
 -THEN the saved events persist
 
+![unnamed](https://user-images.githubusercontent.com/80806004/119922038-030c9a80-bf3d-11eb-9ef3-e603267a2371.jpg)
 
 ```
