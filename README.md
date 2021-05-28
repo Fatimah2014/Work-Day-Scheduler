@@ -9,7 +9,7 @@ You'll need to use the [Moment.js](https://momentjs.com/) library to work with d
 url: https://github.com/Fatimah2014/Work-Day-Scheduler.git
  https://fatimah2014.github.io/Work-Day-Scheduler/
 
-##Steps
+## Steps
 
 
 -GIVEN I am using a daily planner to create a schedule
